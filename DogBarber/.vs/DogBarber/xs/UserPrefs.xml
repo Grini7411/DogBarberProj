@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{01C1A903-5DE3-41B0-B58A-F0BB20A1B6B2}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DogBarber/Controllers/AuthController.cs">
+    <Files>
+      <File FileName="DogBarber/data/ClientRepository.cs" Line="29" Column="45" />
+      <File FileName="DogBarber/Controllers/AuthController.cs" Line="65" Column="15" />
+      <File FileName="DogBarber/Program.cs" Line="34" Column="1" />
+      <File FileName="DogBarber/appsettings.Development.json" />
+      <File FileName="DogBarber/Models/User.cs" />
+      <File FileName="DogBarber/data/AuthRepository.cs" Line="45" Column="35" />
+      <File FileName="DogBarber/Models/Client.cs" Line="14" Column="60" />
+      <File FileName="DogBarber/Models/Appointment.cs" />
+      <File FileName="DogBarber/Models/BaseEntity.cs" />
+      <File FileName="DogBarber/data/AppointmentRepository.cs" Line="61" Column="12" />
+      <File FileName="DogBarber/DTOs/NewAppointmentDTO.cs" Line="6" Column="18" />
+      <File FileName="DogBarber/appsettings.json" />
+      <File FileName="DogBarber/Controllers/AppointmentController.cs" Line="58" Column="24" />
+      <File FileName="DogBarber/DTOs/AppointmentToUpdateDTO.cs" Line="4" Column="40" />
+      <File FileName="DogBarber/Controllers/ClientController.cs" Line="16" Column="15" />
+      <File FileName="DogBarber/Properties/launchSettings.json" />
+      <File FileName="DogBarber/Startup.cs" Line="73" Column="37" />
+      <File FileName="DogBarber/DTOs/SendClientDetailsDTO.cs" Line="13" Column="46" />
+      <File FileName="DogBarber/Config/Logger.cs" Line="31" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DogBarber" expanded="True">
+            <Node name="DogBarber" expanded="True">
+              <Node name="Config" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="AuthController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.DogBarber PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
