@@ -1,0 +1,16 @@
+create procedure [dbo].[Log_SIGN_IN](@id bigint) as
+
+    DECLARE @counter INT
+    BEGIN
+            set nocount on;
+            SELECT @counter = COUNT(*) FROM [dbo].[Logs] WHERE ClientId = @id
+            IF @counter = 0
+                BEGIN
+                    INSERT INTO [dbo].[Logs] (ClientId, LoginCount) VALUES (@id, 1)
+                end
+            ELSE
+                BEGIN
+                    UPDATE [dbo].[Logs] SET LoginCount = LoginCount + 1 WHERE ClientId = @id
+                end
+    END
+go
