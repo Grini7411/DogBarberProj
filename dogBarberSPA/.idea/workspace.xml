@@ -2,16 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c32f57f-4e52-405f-a14b-9ffe19be2cbb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/Controllers/AuthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/DogBarber.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/DogBarber.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/DogBarber.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/DogBarber.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/Logs/log-20201229.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/Logs/log-20201229.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/ref/DogBarber.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/ref/DogBarber.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/data/AppointmentRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/data/AppointmentRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/data/AuthRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/data/AuthRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/ref/DogBarber.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/ref/DogBarber.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AppointmentList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AppointmentList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/QueueInfoModal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/QueueItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609198617453</updated>
-      <workItem from="1609198619251" duration="3232000" />
+      <workItem from="1609198619251" duration="4317000" />
     </task>
     <servers />
   </component>

@@ -22,13 +22,14 @@ function App() {
     let logout = () => {
         setIsLoggedIn(false);
         setUser('');
-        
+
     };
     return(
             <div>
                 <Navbar bg="dark" variant="dark">
                     <Navbar.Brand  >
                         <img
+                            alt=""
                             src="https://img.icons8.com/pastel-glyph/2x/dog--v2.png"
                             width="30"
                             height="30"

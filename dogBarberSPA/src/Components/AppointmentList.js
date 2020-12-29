@@ -56,13 +56,6 @@ export default function AppointmentList(props) {
         return dateObj.toLocaleString();
     };
 
-
-    function handleValidation() {
-        return false;
-    }
-
-
-
     useEffect(() => {
         setCompleteGet(false);
         let url = "http://localhost:5001/api/appointment";
@@ -91,7 +84,7 @@ export default function AppointmentList(props) {
             e.preventDefault();
             setRow(row);
             if (row["clientId"] !== +sessionStorage.getItem("clientId")){
-                alertify.notify("You don't have the permissions to edit this appointment", "warning", "5", () => console.log("no permissions"));
+                alertify.error("You don't have the permissions to edit this appointment", "5", () => console.log("no permissions"));
                 return;
             }
             const config = {

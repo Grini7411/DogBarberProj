@@ -16,8 +16,8 @@ namespace DogBarber.data
 
         public async Task<IEnumerable<Appointment>> GetAppointments()
         {
-            var appointments = await _datacontext.Appointments.ToListAsync();
-            foreach (var appointment in appointments)
+            IEnumerable<Appointment> appointments = await _datacontext.Appointments.ToListAsync();
+            foreach (Appointment appointment in appointments)
             {
                 appointment.Client = await _datacontext.Clients.FirstOrDefaultAsync(x => x.Id == appointment.ClientId);
             };
@@ -27,7 +27,7 @@ namespace DogBarber.data
 
         public async Task<Appointment> GetAppointment(int id)
         {
-            var targetAppointment = await _datacontext.Appointments
+            Appointment targetAppointment = await _datacontext.Appointments
                 .FirstOrDefaultAsync(u => u.Id == id);
 
             return targetAppointment;
@@ -35,7 +35,7 @@ namespace DogBarber.data
         public async Task<bool> DeleteAppointment(int id)
         {
             bool isDeleted = false;
-            var targetAppointment = await FindByIdAsync(id);
+            Appointment targetAppointment = await FindByIdAsync(id);
             if (targetAppointment != null)
             {
                 _datacontext.Appointments.Remove(targetAppointment);
@@ -48,41 +48,28 @@ namespace DogBarber.data
         public async Task<bool> UpdateAppointment(int id, Appointment updAppointment)
         {
             bool isUpdated = false;
-            var existingAppointment = await FindByIdAsync(id);
+            Appointment existingAppointment = await FindByIdAsync(id);
 
             existingAppointment.Date = updAppointment.Date;
-            try
+            
+            if (existingAppointment != null)
             {
-                if (existingAppointment != null)
-                {
-                    _datacontext.Appointments.Update(existingAppointment);
-                    // TODO: update Clients table
-                    await _datacontext.SaveChangesAsync();
-                    isUpdated = true;
-                }
+                _datacontext.Appointments.Update(existingAppointment);
+                await _datacontext.SaveChangesAsync();
+                isUpdated = true;
             }
-            catch (Exception ex)
-            {
-
-            }
+            
             return isUpdated;
         }
 
         public async Task<bool> AddNewAppointment(Appointment appointment)
         {
             bool isCreated = false;
-            try
+            if (appointment != null)
             {
-                if (appointment != null)
-                {
-                    await _datacontext.Appointments.AddAsync(appointment);
-                    await _datacontext.SaveChangesAsync();
-                    isCreated = true;
-                }
-
-            }
-            catch (Exception ex)
-            {
+                await _datacontext.Appointments.AddAsync(appointment);
+                await _datacontext.SaveChangesAsync();
+                isCreated = true;
             }
             return isCreated;
         }
