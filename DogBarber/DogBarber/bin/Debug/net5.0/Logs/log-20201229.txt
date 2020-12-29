@@ -298,3 +298,5 @@ ClientConnectionId:549d1242-4c36-45f5-b585-b0b7f5124bbb
 Error Number:201,State:4,Class:16
 2020-12-29 02:05:48 [INFO] Application started
 2020-12-29 02:05:50 [WARN] Failed to determine the https port for redirect.
+2020-12-29 02:45:03 [INFO] Application started
+2020-12-29 02:45:06 [WARN] Failed to determine the https port for redirect.

@@ -23,8 +23,9 @@ function Login(props) {
         axios.post(url, loginFormResults, props.headersObj.headers).then(r => {
             if (r.data["success"]){
                 alertify.notify("Logged-in successfully!","success","5", () => console.log('yay!'));
-                sessionStorage.setItem("clientId", r.data["clientId"]["id"]);
+                sessionStorage.setItem("clientId", r.data["client"]["id"]);
                 sessionStorage.setItem("token", r.data.token);
+                props.setUser(r.data["client"]["fullName"]);
                 props.setIsLoggedIn(true);
             }
         })

@@ -2,29 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c32f57f-4e52-405f-a14b-9ffe19be2cbb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/.vs/DogBarber/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/.vs/DogBarber/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/.vs/DogBarber/xs/project-cache/DogBarber-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/.vs/DogBarber/xs/project-cache/DogBarber-Debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/Controllers/AppointmentController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/Controllers/AppointmentController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/Controllers/ClientController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/Controllers/ClientController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/Migrations/DataContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/Migrations/DataContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/DogBarber.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/DogBarber.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/DogBarber.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/DogBarber.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/Logs/log-20201228.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/Logs/log-20201228.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/ref/DogBarber.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/ref/DogBarber.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/data/AuthRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/data/AuthRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/data/DataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/data/DataContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/Logs/log-20201229.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/bin/Debug/net5.0/Logs/log-20201229.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/ref/DogBarber.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/Debug/net5.0/ref/DogBarber.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/DogBarber.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/DogBarber.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../DogBarber/DogBarber/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609198617453</updated>
-      <workItem from="1609198619251" duration="713000" />
+      <workItem from="1609198619251" duration="3232000" />
     </task>
     <servers />
   </component>

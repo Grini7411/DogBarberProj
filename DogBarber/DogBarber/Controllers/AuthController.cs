@@ -90,14 +90,8 @@ namespace DogBarber.Controllers
             
             
 
-            return Ok(new {success = true, token = tokenHandler.WriteToken(token), clientId = outClient });
+            return Ok(new {success = true, token = tokenHandler.WriteToken(token), client = outClient });
         }
 
-        [HttpPost("logout")]
-        public async Task<IActionResult> Logout()
-        {
-
-            return Ok();
-        }
     }
 }
