@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using DogBarber.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using DogBarber.DTOs;
 using DogBarber.data;
@@ -12,6 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.Extensions.Configuration;
 using System.IdentityModel.Tokens.Jwt;
+using Microsoft.Data.SqlClient;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -23,13 +21,11 @@ namespace DogBarber.Controllers
     {
         private readonly AuthRepository _authRepo;
         private readonly IConfiguration _config;
-        private readonly ClientRepository _clientRepo;
 
-        public AuthController(AuthRepository authRepository, IConfiguration config, ClientRepository clientRepo)
+        public AuthController(AuthRepository authRepository, IConfiguration config)
         {
             _authRepo = authRepository;
             _config = config;
-            _clientRepo = clientRepo;
         }
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] ClientForRegisterDTO ClientDTO)
@@ -41,13 +37,13 @@ namespace DogBarber.Controllers
             if (await _authRepo.UserExists(ClientDTO.Username))
                 return BadRequest("Username already exists");
             ClientDTO.Username = ClientDTO.Username.ToLower();
-            var clientToCreate = new Client
+            Client clientToCreate = new Client
             {
                 Username = ClientDTO.Username,
                 DogName = ClientDTO.DogName,
                 FullName = ClientDTO.FullName
             };
-            var createdClient = await _authRepo.Register(clientToCreate, ClientDTO.Password);
+            Client createdClient = await _authRepo.Register(clientToCreate, ClientDTO.Password);
             SendClientDetailsDTO outClient = new SendClientDetailsDTO
             {
                 Id = createdClient.Id,
@@ -91,13 +87,13 @@ namespace DogBarber.Controllers
                 FullName = clientFromRepo.FullName,
                 Appointments = clientFromRepo.Appointments
             };
+            
+            
 
             return Ok(new {success = true, token = tokenHandler.WriteToken(token), clientId = outClient });
         }
 
         [HttpPost("logout")]
-        [ProducesResponseType(StatusCodes.Status201Created)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Logout()
         {
 

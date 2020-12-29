@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/junior/Documents/Progrmming Projects/DogBarber/DogBarber/DogBarber.csproj": {}
+    "/Users/junior/test123/DogBarberProj/DogBarber/DogBarber/DogBarber.csproj": {}
   },
   "projects": {
-    "/Users/junior/Documents/Progrmming Projects/DogBarber/DogBarber/DogBarber.csproj": {
+    "/Users/junior/test123/DogBarberProj/DogBarber/DogBarber/DogBarber.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/junior/Documents/Progrmming Projects/DogBarber/DogBarber/DogBarber.csproj",
+        "projectUniqueName": "/Users/junior/test123/DogBarberProj/DogBarber/DogBarber/DogBarber.csproj",
         "projectName": "DogBarber",
-        "projectPath": "/Users/junior/Documents/Progrmming Projects/DogBarber/DogBarber/DogBarber.csproj",
+        "projectPath": "/Users/junior/test123/DogBarberProj/DogBarber/DogBarber/DogBarber.csproj",
         "packagesPath": "/Users/junior/.nuget/packages/",
-        "outputPath": "/Users/junior/Documents/Progrmming Projects/DogBarber/DogBarber/obj/",
+        "outputPath": "/Users/junior/test123/DogBarberProj/DogBarber/DogBarber/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/junior/.config/NuGet/NuGet.Config"
+          "/Users/junior/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

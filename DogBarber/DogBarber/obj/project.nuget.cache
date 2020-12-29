@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vo1mIiKmNFi2FUEBNcKq0zSCK5g9C8XVR6UX8c8kTu55SeAMu3J6jmEejU3uVUrpA3qEz7GZzIcwPGJDk/HGSg==",
+  "dgSpecHash": "u6P4dGqoEzKmeEnja4pZLKxmAf8PTVZmjO1FfctToMbEeq+cXkFVCruZ+nC2/ym6BtlnVZJQiqUdgMh9x/Gbew==",
   "success": true,
-  "projectFilePath": "/Users/junior/Documents/Progrmming Projects/DogBarber/DogBarber/DogBarber.csproj",
+  "projectFilePath": "/Users/junior/test123/DogBarberProj/DogBarber/DogBarber/DogBarber.csproj",
   "expectedPackageFiles": [
     "/Users/junior/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/junior/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/5.0.1/microsoft.aspnetcore.authentication.jwtbearer.5.0.1.nupkg.sha512",

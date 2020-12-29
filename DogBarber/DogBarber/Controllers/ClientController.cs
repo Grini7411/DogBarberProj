@@ -27,8 +27,7 @@ namespace DogBarber.Controllers
         [HttpGet("getall")]
         public async Task<IActionResult> GetAllClients()
         {
-            //Todo: Validations!!
-            var allClients = await _clientRepo.GetAllClients();
+            IEnumerable<Client> allClients = await _clientRepo.GetAllClients();
             return Ok(allClients);
         }
 
@@ -37,7 +36,7 @@ namespace DogBarber.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> GetSingleClient([FromRoute] int id)
         {
-            var client = await _clientRepo.GetClient(id);
+            Client client = await _clientRepo.GetClient(id);
             return Ok(client);
         }
 
@@ -46,8 +45,8 @@ namespace DogBarber.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> DeleteClient([FromRoute] int id)
         {
-            var client = await _clientRepo.DeleteClient(id);
-            return Ok(client);
+            bool isDeleted = await _clientRepo.DeleteClient(id);
+            return Ok(new { success = isDeleted });
         }
 
     }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using DogBarber.data;
 using DogBarber.DTOs;
@@ -13,26 +15,23 @@ namespace DogBarber.Controllers
     [Route("api/[controller]")]
     public class AppointmentController : ControllerBase
     {
-        private readonly ClientRepository _clientRepo;
         private readonly AppointmentRepository _appointemntRepo;
-        public AppointmentController(ClientRepository clientRepo, AppointmentRepository appointemntRepo)
+        public AppointmentController(AppointmentRepository appointemntRepo)
         {
-            _clientRepo = clientRepo;
             _appointemntRepo = appointemntRepo;
-
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAppointments()
         {
-            var appointments = await _appointemntRepo.GetAppointments();
+            IEnumerable<Appointment> appointments = await _appointemntRepo.GetAppointments();
             
             return Ok(appointments);
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetAppointment([FromRoute] int id)
         {
-            var appointment = await _appointemntRepo.GetAppointment(id);
+            Appointment appointment = await _appointemntRepo.GetAppointment(id);
             return Ok(appointment);
         }
 
@@ -41,7 +40,7 @@ namespace DogBarber.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> AddNewAppointment([FromBody] NewAppointmentDTO bodyObj)
         {
-            var appointmentToCreate = new Appointment
+            Appointment appointmentToCreate = new Appointment
             {
                 ClientId = bodyObj.ClientId,
                 Date = Convert.ToDateTime(bodyObj.Date),
@@ -60,7 +59,7 @@ namespace DogBarber.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> UpdateAppointment([FromRoute] int id, AppointmentToUpdateDTO appointmentToUpdateDTO)
         {
-            var appointmentToUpdate = new Appointment
+            Appointment appointmentToUpdate = new Appointment
             {
                 Date = Convert.ToDateTime(appointmentToUpdateDTO.NewDate)
             };

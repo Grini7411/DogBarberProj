@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using DogBarber.Models;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace DogBarber.data
@@ -16,7 +17,7 @@ namespace DogBarber.data
         public async Task<Client> Login(string username, string password)
         {
             //compare username with usernames in db
-            var client = await _context.Clients.FirstOrDefaultAsync(x => x.Username == username);
+            Client client = await _context.Clients.FirstOrDefaultAsync(x => x.Username == username);
             if (client == null)
             {
                 return null;
@@ -26,6 +27,8 @@ namespace DogBarber.data
             {
                 return null;
             }
+            // This SP Logs the count of the entered user:
+            _context.Database.ExecuteSqlRaw("EXEC dbo.Log_SIGN_IN @id={0}", client.Id);
             return client;
         }
 

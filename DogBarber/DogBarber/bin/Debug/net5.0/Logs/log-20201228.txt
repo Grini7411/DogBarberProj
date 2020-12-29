@@ -2,3 +2,5 @@
 2020-12-28 16:15:44 [WARN] Failed to determine the https port for redirect.
 2020-12-28 17:14:34 [INFO] Application started
 2020-12-28 17:14:37 [WARN] Failed to determine the https port for redirect.
+2020-12-28 23:55:55 [INFO] Application started
+2020-12-28 23:56:00 [WARN] Failed to determine the https port for redirect.
