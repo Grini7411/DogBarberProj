@@ -10,6 +10,7 @@ using System.Text;
 using Microsoft.Extensions.Configuration;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Logging;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -21,11 +22,13 @@ namespace DogBarber.Controllers
     {
         private readonly AuthRepository _authRepo;
         private readonly IConfiguration _config;
+        private readonly ILogger<AuthController> _logger;
 
-        public AuthController(AuthRepository authRepository, IConfiguration config)
+        public AuthController(AuthRepository authRepository, IConfiguration config ,ILogger<AuthController> logger)
         {
             _authRepo = authRepository;
             _config = config;
+            _logger = logger;
         }
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] ClientForRegisterDTO ClientDTO)
@@ -87,8 +90,8 @@ namespace DogBarber.Controllers
                 FullName = clientFromRepo.FullName,
                 Appointments = clientFromRepo.Appointments
             };
-            
-            
+            _logger.LogInformation($"Logged In {outClient.Id} - {outClient.FullName}");
+
 
             return Ok(new {success = true, token = tokenHandler.WriteToken(token), client = outClient });
         }

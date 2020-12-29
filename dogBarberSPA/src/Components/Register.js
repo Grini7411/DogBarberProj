@@ -57,6 +57,6 @@ export default function Register(props) {
                 <Form.Control name="DogName" type="text" required onChange={handleInputChange}/>
             </Form.Group>
             <Button className="btn btn-primary rounded-pill" type="submit">Register</Button>
-        </Form>
+        {/*</Form>*/}
     );
 }

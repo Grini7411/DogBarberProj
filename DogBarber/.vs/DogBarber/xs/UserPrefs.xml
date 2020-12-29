@@ -2,17 +2,17 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="DogBarber/Controllers/AuthController.cs">
     <Files>
       <File FileName="DogBarber/data/ClientRepository.cs" Line="29" Column="33" />
-      <File FileName="DogBarber/Controllers/AuthController.cs" Line="60" Column="58" />
+      <File FileName="DogBarber/Controllers/AuthController.cs" Line="93" Column="13" />
       <File FileName="DogBarber/Program.cs" />
       <File FileName="DogBarber/appsettings.Development.json" />
       <File FileName="DogBarber/Models/User.cs" />
-      <File FileName="DogBarber/data/AuthRepository.cs" Line="23" Column="28" />
+      <File FileName="DogBarber/data/AuthRepository.cs" />
       <File FileName="DogBarber/Models/Client.cs" />
       <File FileName="DogBarber/Models/Appointment.cs" />
       <File FileName="DogBarber/Models/BaseEntity.cs" />
       <File FileName="DogBarber/data/AppointmentRepository.cs" />
       <File FileName="DogBarber/DTOs/NewAppointmentDTO.cs" />
-      <File FileName="DogBarber/appsettings.json" Line="1" Column="1" />
+      <File FileName="DogBarber/appsettings.json" />
       <File FileName="DogBarber/Controllers/AppointmentController.cs" />
       <File FileName="DogBarber/DTOs/AppointmentToUpdateDTO.cs" />
       <File FileName="DogBarber/Controllers/ClientController.cs" />
@@ -21,7 +21,7 @@
       <File FileName="DogBarber/DTOs/SendClientDetailsDTO.cs" />
       <File FileName="DogBarber/Config/Logger.cs" />
       <File FileName="DogBarber/Models/Log.cs" />
-      <File FileName="DogBarber/data/DataContext.cs" Line="24" Column="12" />
+      <File FileName="DogBarber/data/DataContext.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

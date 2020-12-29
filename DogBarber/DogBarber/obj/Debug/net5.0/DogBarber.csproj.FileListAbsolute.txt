@@ -136,3 +136,4 @@
 /Users/junior/test123/DogBarberProj/DogBarber/DogBarber/obj/Debug/net5.0/ref/DogBarber.dll
 /Users/junior/test123/DogBarberProj/DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.pdb
 /Users/junior/test123/DogBarberProj/DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.genruntimeconfig.cache
+/Users/junior/test123/DogBarberProj/DogBarber/DogBarber/obj/Debug/net5.0/DogBarber.csprojAssemblyReference.cache
